@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: azure;
+  font-family: 'Roboto', sans-serif; 
+  outline: none;
+}
+.calculator {
+  padding: 15px;
+  border-radius: 30px;
+  height: 400px;
+  width: 300px;
+  margin: 15px;
+  background-color: lightgrey;
+  box-shadow: inset  rgba(0, 0, 0, 0.19) 5px 5px 12px, rgba(0, 0, 0, 0.23) 5px 5px 12px;
+  display: grid;
+  grid-template-columns: repeat(4,70px);
+}
+.container{
+  display:flex;
+  margin: auto;
+  height: 80vh;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin-right: 40px;
+}
+input {
+  grid-column: span 4;
+  height: 60px;
+  width: 93%;
+  background-color: aliceblue;
+  border-style: none;
+  border-radius: 25px;
+  font-size: 50px;
+  text-align: end;
+  margin: auto;
+  margin-left: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px;
+
+}
+.button, #clear{
+  width: 68px;
+  height: 48px;
+  background-color: aliceblue;
+  border: none;
+  font-size: 18px;
+  padding: 20px;
+  margin: 0 9px;
+  border: 2px solid black;
+  border-radius: 12px;
+  cursor: pointer;
+
+}
+
+button:hover,button:active{
+  background-color: aliceblue;
+
+}
+#equal{
+  width: 138px;
+  background-color: aliceblue;
+
+}
+#math{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  position: absolute;
+}
+#title, #description{
+  text-align: center;
+}
